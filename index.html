@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&aacute;laga Trivia</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body class="index-page">
+
+        
+    <header aria-label="navigation">
+        <a href="index.html"><h1>M&aacute;laga Trivia</h1></a>
+        <div class="icon-container">
+            <a href="index.html" aria-label="play"><i class="fa-solid fa-play active" aria-label="play"></i></a>
+            <a href="help.html" aria-label="help"><i class="fa-solid fa-question" aria-label="help"></i></a>
+        </div>
+    </header>
+      
+      <section id="welcomeScreen" aria-label="welcome">
+        <h1>Welcome to the M&aacute;laga Trivia</h1>
+        <h2>Test your knowledge of this enchanting city on the Costa del Sol.</h2> 
+        <p>Discover its rich history, vibrant culture, stunning landmarks, 
+            and more as you answer fun and informative questions.</p>
+        <label for="name">Please enter your name:</label>
+        <input type="text" id="name" required placeholder="Your name here...">
+        <button aria-label="Click to start the quiz" onclick="startQuiz()">Start Quiz</button>
+        </section>
+    
+
+    <section id="quizWrapper" aria-label="quiz">
+        <div id="questionWrapper"></div>
+        <div id="feedback"></div>
+        <div id="scoreBoard">
+            <span id="timer" class="timer">Time Remaining: 10 seconds</span>
+            <h2>Score <span id="score">0</span></h2>
+        </div>        
+    </section>
+
+    <footer>
+        <a href="https://github.com/igordinuzzi" target="_blank" aria-label="Go to Igor's Github page">Made by Igor with ❤️</a>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
