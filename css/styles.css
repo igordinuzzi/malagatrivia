@@ -80,3 +80,206 @@ h2 {
 #quizWrapper h2{
     font-size: 18px;
 }
+
+#welcomeScreen {
+    width: 60%;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #0d2479;
+    color: #fff;
+    border: 3px solid #f2db83;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    #welcomeScreen {
+        width: 80%; 
+        padding: 20px; 
+    }
+}
+
+#quizWrapper {
+    width: 60%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #0d2479;
+    color: #fff;
+    border: 3px solid #f2db83;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#help {
+    width: 60%;
+    background-color: #fff;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#error {
+    width: 60%;
+    padding: 30px;
+    color: #fff;
+    align-items: center; 
+    justify-content: center; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    #quizWrapper {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+
+a {
+    color: #f2db83;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #efbe01;
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    color: #0d2479;
+    background-color: #f2db83;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+button:hover {
+    background-color: #efbe01;
+}
+
+#quizWrapper > * {
+    display: block;
+    width: 100%;
+}
+
+.answer-button {
+    display: block; 
+    margin: 10px auto; /* Top/Bottom margin of 10px and left/right margin of auto */
+    text-align: center;
+}
+
+
+#feedback {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+#feedback img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+#scoreBoard {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#scoreBoard h2 {
+    font-size: 16px;
+    background-color: #D9ECF4;
+    margin: 5px;
+    border-radius: 20px;
+    color: #0d2479;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.timer {
+    font-size: 16px;
+    color: #a6bdff;
+    margin: 10px;
+    border: 2px solid #a6bdff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.correct-feedback {
+    color: #b9ff83;
+}
+
+.incorrect-feedback {
+    color: #ff8383;
+}
+
+input{
+    font-size: 16px;
+    background-color: #D9ECF4;
+    margin: 5px;
+    border-radius: 20px;
+    color: #0d2479;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.fa-solid.fa-play {
+    color: #f2db83; 
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.fa-solid.fa-play:hover {
+    color: #efbe01;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.fa-solid.fa-question {
+    color: #f2db83; 
+    font-size: 24px; 
+}
+
+.fa-solid.fa-question:hover {
+    color: #efbe01;
+    font-size: 24px;
+}
+
+.fa-solid.fa-question.active {
+    color: #fff;
+}
+
+.fa-solid.fa-play.active {
+    color: #fff;
+}
+
+p small {
+    font-size: 14px;
+}
