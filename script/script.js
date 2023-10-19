@@ -9,6 +9,9 @@ function startQuiz() {
         document.getElementById("quizWrapper").style.display = "block";
         document.getElementById("welcomeScreen").style.display = "none";
 
+        // Generate random questions
+        getRandomQuestions();
+
         // Start displaying questions
         displayQuestion();
     } else {
