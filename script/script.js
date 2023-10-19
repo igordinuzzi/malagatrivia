@@ -17,6 +17,7 @@ function startQuiz() {
     }
 }
 
+
 const allQuestions = [
     {
         question: "Which region of Spain is M&aacute;laga located in?",
@@ -303,7 +304,7 @@ function checkAnswer(choice) {
     }, 2000);
 }
 
-/ Display the welcome screen when the page loads
+// Display the welcome screen when the page loads
 window.onload = function() {
     document.getElementById("quizWrapper").style.display = "none";
     document.getElementById("welcomeScreen").style.display = "block";
@@ -312,4 +313,3 @@ window.onload = function() {
 function restartQuiz() {
     location.reload();
 }
-
