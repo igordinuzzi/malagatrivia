@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Styles for index page */
+.index-page{
+    background-image: url('../img/bg.jpg'); /* Set your background image */
+    background-size: cover; /* Cover the entire body with the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Fixed background */
+}
+
+/* Styles for help and 404 page */
+
+.help-page{
+    background-color: #0d2479;
+}
