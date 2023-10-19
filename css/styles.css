@@ -283,3 +283,8 @@ input{
 p small {
     font-size: 14px;
 }
+
+iframe.no-border {
+    border: none;
+}
+
