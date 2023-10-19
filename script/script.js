@@ -279,3 +279,27 @@ function displayQuestion() {
         `;
     }
 }
+
+function checkAnswer(choice) {
+    clearInterval(timer);
+
+    const feedback = document.getElementById("feedback");
+
+    if (choice === allQuestions[displayedQuestions[currentQuestionIndex]].answer) {
+        score++;
+        feedback.innerHTML = '<img src="./img/correct.png" alt="Correct"/> <span class="correct-feedback">Correct!</span>';
+    } else {
+        feedback.innerHTML = `<img src="./img/incorrect.png" alt="Incorrect"/> <span class="incorrect-feedback">Incorrect. The correct answer was: ${allQuestions[displayedQuestions[currentQuestionIndex]].answer}</span>`;
+    }
+    
+    document.getElementById("score").textContent = ` ${score} /10`;
+    
+
+
+    currentQuestionIndex++;
+    setTimeout(() => {
+        feedback.innerHTML = '';
+        displayQuestion();
+    }, 2000);
+}
+
