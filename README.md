@@ -1,21 +1,19 @@
-# Unity Yoga Collective Website
+# Málaga Trivia
 
-Unity Yoga Collective is a serene oasis of wellness and self-discovery. 
-The studio offers a holistic approach to yoga and well-being, providing a space where individuals of all backgrounds and abilities 
-can come together to explore the transformative power of yoga and mindfulness.
+Introducing "Málaga Trivia" - a captivating quiz that takes you on a virtual journey through the sun-kissed streets and azure coasts of Málaga and Costa del Sol. Whether you're a native, a passionate traveler, or simply curious, this quiz offers a blend of cultural, historical, and fun-filled questions tailored to test and expand your knowledge about this Mediterranean paradise. From renowned landmarks to local delicacies and celebrated personalities, Málaga Trivia encapsulates the essence of Andalusia's crown jewel. Ready to challenge yourself? Dive in and discover the wonders of Málaga and the Costa del Sol!
 
-Live webpage [here](https://igordinuzzi.github.io/unityoga/)
+Live webpage [here](https://igordinuzzi.github.io/malagatrivia/)
 
 ## Features
 
-- Navigation with links to all pages, responsive on all devices.
+- Navigation with links to Play and Help, responsive on all devices.
 Navigation in a webpage is crucial for providing a user-friendly experience by enabling visitors to efficiently explore and access the site's content, ultimately improving user engagement and satisfaction. 
 It helps users find information, products, or services, leading to increased usability and retention.
  ![Navigation](doc/nav-desktop.jpg)
 ![Navigation mobile](doc/nav-mobile.jpg)
   
-- Footer with address and Instagram link.
-The footer is essential in a webpage as it often contains important contact information, like an address, and links to social media profiles such as Instagram, enhancing user engagement and accessibility. It serves as a valuable reference point for users seeking to connect with the website's owner or follow them on social platforms.
+- Footer with a Github link.
+The footer contains important copyright information, asserting the originality and ownership of the content. Additionally, for those interested in delving deeper or collaborating, a direct link to our GitHub repository provides seamless access to the codebase.
    ![Footer](doc/nav-desktop.jpg)
 
 - Favicon for easy recognition.
