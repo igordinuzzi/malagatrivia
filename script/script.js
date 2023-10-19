@@ -211,3 +211,27 @@ const allQuestions = [
 
     
 ];
+
+let currentQuestionIndex = 0;
+let score = 0;
+let displayedQuestions = [];
+
+function getRandomQuestions() {
+    displayedQuestions = [];
+    while (displayedQuestions.length < 10) {
+        const randomIndex = Math.floor(Math.random() * allQuestions.length);
+        if (!displayedQuestions.includes(randomIndex)) {
+            displayedQuestions.push(randomIndex);
+        }
+    }
+}
+
+let timer;
+let timeRemaining = 10;
+
+function startOver() {
+    currentQuestionIndex = 0;
+    score = 0;
+    getRandomQuestions();
+    displayQuestion();
+}
