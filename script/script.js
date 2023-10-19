@@ -235,3 +235,47 @@ function startOver() {
     getRandomQuestions();
     displayQuestion();
 }
+
+function startQuiz() {
+    const nameInput = document.getElementById("name");
+    if (nameInput.checkValidity()) {
+        document.getElementById("quizWrapper").style.display = "block";
+        document.getElementById("welcomeScreen").style.display = "none";
+        getRandomQuestions();
+        displayQuestion();
+    } else {
+        alert("Please enter your name before starting the quiz.");
+    }
+}
+
+function displayQuestion() {
+    clearInterval(timer);
+    timeRemaining = 10;
+
+    if (currentQuestionIndex < displayedQuestions.length) {
+        const questionObj = allQuestions[displayedQuestions[currentQuestionIndex]];
+        const questionWrapper = document.getElementById("questionWrapper");
+        questionWrapper.innerHTML = `
+            <h2>${questionObj.question}</h2>
+            <img src="${questionObj.image}" alt="${questionObj.ariaLabel}"/>
+            ${questionObj.choices.map((choice, index) => `<button class="answer-button" onclick="checkAnswer('${choice}')">${choice}</button>`).join('')}
+        `;
+
+        timer = setInterval(() => {
+            const timerElement = document.getElementById("timer");
+            timerElement.textContent = `Time Remaining: ${timeRemaining} seconds`;
+            timeRemaining--;
+
+            if (timeRemaining < 0) {
+                clearInterval(timer);
+                timerElement.textContent = "Time's up!";
+                checkAnswer('');
+            }
+        }, 1000);
+    } else {
+        document.getElementById("quizWrapper").innerHTML = `
+            <h1>You've completed the quiz! Your score: ${score}</h1>
+            <button class="answer-button" onclick="restartQuiz()">Play Again</button>
+        `;
+    }
+}
