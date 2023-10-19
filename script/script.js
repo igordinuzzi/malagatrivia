@@ -303,3 +303,13 @@ function checkAnswer(choice) {
     }, 2000);
 }
 
+/ Display the welcome screen when the page loads
+window.onload = function() {
+    document.getElementById("quizWrapper").style.display = "none";
+    document.getElementById("welcomeScreen").style.display = "block";
+};
+
+function restartQuiz() {
+    location.reload();
+}
+
