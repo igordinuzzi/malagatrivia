@@ -27,3 +27,31 @@ body {
 .help-page{
     background-color: #0d2479;
 }
+
+header {
+    display: flex;
+    flex-grow: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d2479;
+    color: #fff;
+    padding: 10px 20px;
+    height: 50px;
+    border-bottom: 1px solid #f2db83;
+  }
+
+  footer {
+    width: 100%;
+    background-color:#0d2479;
+    font-size: 14px;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    border-top: 1px solid #f2db83;
+    flex-grow: 0;
+}
+
+header, footer, #quizWrapper {
+    flex-shrink: 0;  
+}
