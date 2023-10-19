@@ -55,3 +55,28 @@ header {
 header, footer, #quizWrapper {
     flex-shrink: 0;  
 }
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .icon-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .icon-container i {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+
+h2 {
+    color: #f2db83;
+    font-size: 18px;
+}
+
+#quizWrapper h2{
+    font-size: 18px;
+}
