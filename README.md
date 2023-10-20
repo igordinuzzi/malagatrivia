@@ -20,36 +20,34 @@ The footer contains important copyright information, asserting the originality a
 The favicon is important in a webpage as it provides a recognizable visual identity in browser tabs, enhancing brand visibility and user recognition, and it helps users quickly locate and return to the site.
   ![Favicon](doc/favicon.png)
   
-- Landing page with methodology, newsletter link, and submission form. The landing page with methodology establishes credibility, a newsletter link encourages user engagement and updates, and a submission form captures valuable leads or data, collectively maximizing the webpage's effectiveness in conveying information and fostering user interaction.
+- A welcoming landing page featuring a quiz about Málaga, which includes an introductory screen and a compulsory field for entering one's name.
     ![Landing Page](doc/homepage.png)
   
-- Free Yoga Online page with embedded Vimeo videos.
-The "Free Yoga Online" page with embedded Vimeo videos offers accessible, engaging yoga content, promoting health and well-being, and attracts and retains visitors by providing a convenient, in-depth resource for yoga enthusiasts.
+- Quiz interface showcasing 30 different questions, of which only 10 are displayed during each gameplay session. Each question provides three answer options, but only one of them is correct.
   ![Freeyoga](doc/free-yoga.jpg)
   
-- Teachers page with teacher profiles. The "Unity Yoga Collective Teachers" page with teacher profiles is essential for users to learn about instructors' qualifications and teaching styles, fostering trust and helping students make informed choices when selecting the right teacher for their needs. It enhances the overall user experience and facilitates a more personalized approach to yoga instruction.
-
+- The user is given a ten-second window to respond to a question, as indicated by the timer functionality.
   ![Teacher](doc/teachers.jpg)
   
-- Methodology page with yoga types in an accordion. The "Methodology" page with yoga types in an accordion format offers organized, accessible information, allowing users to explore diverse yoga styles and understand the methodology behind them, promoting a more informed and engaging yoga experience. It enhances user education and engagement with the content.
-
-   ![Methodology](doc/methodology.jpg)
+- The interface will provide feedback to the user if their answer is correct.
+  ![Methodology](doc/methodology.jpg)
   
-- Schedule page with class details. The "Unity Yoga Collective Schedule" page with class details is important in a webpage because it provides users with up-to-date information about class times, styles, and instructors, helping them plan their participation and fostering a sense of reliability and trust in the yoga program. It enhances user convenience and encourages regular attendance.
+- The user will receive feedback from the system if their answer is incorrect and will be shown the correct response.
   ![Schedule](doc/schedule.jpg)
   
-- Pricing page with package information. The "Unity Yoga Collective Studio Pricing" page with package information is important in a webpage as it helps potential clients understand the cost structure and make informed decisions about their investment in yoga classes, fostering transparency and trust while attracting and retaining customers with clear, accessible pricing details. It aids in user conversion and revenue generation for the studio.
+- The user will receive a score based on their responses to 10 questions and will be informed about the number of remaining questions.
  ![Pricing](doc/pricing.jpg)
  
-- Contact page with map, address, and phone details. The "Unity Yoga Collective Studio Contact" page is crucial for users to easily locate the studio, establish a physical connection, and contact the business, enhancing accessibility and trust while promoting in-person visits and inquiries. It provides essential information for user engagement and potential clientele.
+- Users have the option to replay and will be guided back to the introductory screen.
   ![Contact](doc/contact.jpg)
 
- - Thank You Newsletter Subscription Page. A special "Thank You Newsletter Subscription Page" for our community members. When users subscribe to our newsletter, they are redirected to this page, which expresses our gratitude and provides a link back to the homepage. It's a thoughtful way to welcome new subscribers and will re-direct users to the homepage by clicking the hyperlink or re-direct automatically after 10 seconds. 
+ - Help Page - This support page features a tutorial embedded via a third-party "Iorad" iframe. It guides users on how to navigate the game and explains the type of feedback they can expect to receive.
   ![Thankyou](doc/thank-you.jpg)
 
  - 404 page - Custom 404 page and the auto-redirect feature to the homepage. The custom 404 page and auto-redirect feature have been seamlessly integrated. This ensures that when a user encounters a 404 error, they will experience a smooth transition to the custom 404 page and subsequently be redirected to the homepage. 
   ![404](doc/404.jpg)
 
+WIP ---------------------->
 ## Existing Features and Features to Implement
 
 **Existing features:**
