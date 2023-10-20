@@ -132,7 +132,7 @@ Testing was focused to ensure the following criteria were met:
 
 Manual tests were also performed to ensure the website was as accessible as possible and an accessibility issue was identified.
 
-I've discovered several errors on the webpage, specifically related to color contrast and headers. I fixed these issues to enhance accessibility and ensure that all users can easily navigate and interact with the content, promoting a more inclusive and user-friendly experience.
+I've discovered several errors on the webpage, specifically related to headers and the iframe. I fixed these issues to enhance accessibility and ensure that all users can easily navigate and interact with the content, promoting a more inclusive and user-friendly experience.
 
 **Browser Compatibility Checked:**
 
@@ -149,47 +149,37 @@ Testing was performed to ensure all navigation links on the respective pages, na
 | Navigation Link | Page to Load          |
 | --------------- | ----------------------|
 | Home            | index.html            |
-| Free yoga online| free-yoga-online.html |
-| Teachers        | teachers.html         |
-| Methodology     | methodology.html      |
-| Schedule        | schedule.html         |
-| Pricing         | pricing.html          |
-| Contact         | contact.html          |
-| Thank you page  | thank-you.html         |
-| 404 error page  | 404.html              |
+| Help            | help.html             |
 
 Links on all pages navigated to the correct pages as exptected.
-
-**Form Testing**
-
-The form on the home page was tested to ensure it functioned as expected when correct data was input and when incorrect data was input. The following test scenarios were covered:
 
 _Scenario One - Correct Inputs_
 
 Steps to test:
 
-1. Navigate to [Unity Collective Yoga - Home Page](https://igordinuzzi.github.io/unityoga/index.html)
+1. Navigate to [Home Page](https://igordinuzzi.github.io/malagatrivia/index.html)
 2. Scroll down to the form and input the following data:
-   - Email: your@email.com
-3. Click Submit
-4. User should be redirected to thankyou.html page
+   - Name: Your name
+3. Click "Start Quiz"
+4. User should be redirected to the quiz page
 
 Expected:
 
-Form submits with no warnings or errors and user is redirected to thankyou.html page.
+Form submits with no warnings or errors and user is redirected to the quiz.
 
 Actual:
 
-Website behaved as expected with no errors or warnings and redirected to thankyou.html page.
+Website behaved as expected with no errors or warnings and redirected to quiz page.
 
-_Scenario Two - Missing Required Field Email_
+_Scenario Two - Missing Required Field Name_
 
 Steps to test:
 
-1. Navigate to [Unity Collective Yoga - Home Page](https://igordinuzzi.github.io/unityoga/index.html)
+1. Navigate to [Home Page](https://igordinuzzi.github.io/malagatrivia/index.html)
 2. Scroll down to the form and input the following data:
-   - Email: your@email.com
-3. Click Submit
+   - Name: Your name
+3. Click "Start Quiz"
+4. User should be redirected to the quiz page
 
 Expected:
 
@@ -199,97 +189,102 @@ Actual:
 
 Website behaved as expected, error message was displayed and the form did not submit.
 
-**Footer Social Media Icons / Links**
+_Scenario Three - System feedback_
 
-Testing was performed on the Font Awesome Social Media icons in the footer to ensure that each one opened in a new tab.
+Steps to test:
 
-Each item opened a new tab when clicked as expected.
-
-**Footer Contact Information**
-
-Testing was performed on the phone number in the contact information section to ensure behaviour was as expected.
-
-_Steps to test Telephone Number_
-
-1. Navigate to [Unity Yoga Collective - Contact](https://igordinuzzi.github.io/unityoga/contact.html)
-2. Click the phone number
+1. Navigate to [Home Page](https://igordinuzzi.github.io/malagatrivia/index.html)
+2. Scroll down to the form and input the following data:
+   - Name: Your name
+3. Click "Start Quiz"
+4. Once the quiz has started click on one choice
+5. User should receive feedback (right choice or wrong choice) from the system
 
 Expected:
 
-A window is opened asking which device you would like to call from.
+Feedback is displayed.
 
 Actual:
 
-Behavior was as expected and the window presented me with the following option to call:
+Website behaved as expected, feedback message was displayed.
 
-- Mobile Phone
+_Scenario Four - Timer_
+
+Steps to test:
+
+1. Navigate to [Home Page](https://igordinuzzi.github.io/malagatrivia/index.html)
+2. Scroll down to the form and input the following data:
+   - Name: Your name
+3. Click "Start Quiz"
+4. Once the quiz has started the timer is pacing the questions
+5. User should be able to see the timer counting down. 
+
+Expected:
+
+The timer is shown and counts down from 10 seconds to 0.
+
+Actual:
+
+Website behaved as expected, timer counts down.
+
+_Scenario Five - Score_
+
+Steps to test:
+
+1. Navigate to [Home Page](https://igordinuzzi.github.io/malagatrivia/index.html)
+2. Scroll down to the form and input the following data:
+   - Name: Your name
+3. Click "Start Quiz"
+4. Once the quiz has started the timer is pacing the questions
+5. The user should be able to view scores ranging from 1 to 10.
+
+Expected:
+
+The score label displays and increments from 1 to 10.
+
+Actual:
+
+The website performed as anticipated, and the scoring mechanism is functional.
+
+**Footer Links**
+
+Testing was performed on the Github link in the footer to ensure that each one opened in a new tab.
+
+Opened a new tab when clicked as expected.
 
 **Lighthouse Report:**
 
 - Landing Page
   ![Landing Page Lighthouse](doc/01-light-index.jpg)
 
-- Free yoga videos page
-  ![Free yoga video Page Lighthouse](doc/02-light-free-yoga.jpg)
-  
-- Teachers page
-  ![Teachers Page Lighthouse](doc/03-light-teachers.jpg)
-  
-- Methodology page
-  ![Methodology Page Lighthouse](doc/04-light-methodology.jpg)
-  
-- Schedule page
-  ![Schedule Page Lighthouse](doc/05-light-schedule.jpg)
-  
-- Pricing page
-  ![Pricing Page Lighthouse](doc/06-light-pricing.jpg)
-  
-- Contact page
-  ![Contact Page Lighthouse](doc/07-light-contact.jpg)
 
-- Thank You Page
-  The low accessibility score is attributed to the redirection. In order to ensure users are informed about the impending redirection, I have included a text warning stating that an automatic redirection will occur in 10 seconds unless they take action, in addition to the call to action that directs them back to the homepage.
-  ![Thank you Lighthouse](doc/09-light-thankyou.jpg)
+- Help Page
+  The low accessibility score is attributed to the third-party iframe.
+  While iframes can be useful for embedding third-party content, they can also introduce performance and accessibility challenges.
+  The third-party iframe is heavy or not well-optimized. Iframes can disrupt the natural tabbing order, making it confusing for users relying on keyboards or screen readers to navigate.
+  ![Thank you Lighthouse](doc/02-light-help.jpg)
 
 - 404 Page
   The low accessibility score is attributed to the redirection. In order to ensure users are informed about the impending redirection, I have included a text warning stating that an automatic redirection will occur in 10 seconds unless they take action, in addition to the call to action that directs them back to the homepage.
-  ![404 Lighthouse](doc/08-light-404.jpg)  
+  ![404 Lighthouse](doc/03-light-error.jpg)  
 
 
 **W3C Validator results:**
 
 - Landing Page
-  ![Landing Page validator](doc/01-check-index.png)
+  ![Landing Page validator](doc/01-check-index.jpg)
 
-- Free yoga videos page
-  ![Free yoga video Page validator](doc/02-check-free.png)
-  
-- Teachers page
-  ![Teachers Page validator](doc/03-check-teachers.png)
-  
-- Methodology page
-  ![Methodology Page validator](doc/04-check-methodology.png)
-  
-- Schedule page
-  ![Schedule Page validator](doc/05-check-schedule.png)
-  
-- Pricing page
-  ![Pricing Page validator](doc/06-check-pricing.png)
-  
-- Contact page
-  ![Contact Page validator](doc/07-check-contact.png)
-
-- Thank You Page
-  ![Thank you validator](doc/10-check-thankyou.jpg)
+- Help Page
+  ![Help validator](doc/02-check-help.jpg)
 
 - 404 Page
-  ![404 validator](doc/11-check-404.jpg)    
+  ![404 validator](doc/03-check-error.jpg)    
 
 ## Deployment:
 
 **Version Control:**
 
-The site was created using the Visual Studio code editor and pushed to github to the remote repository ‘Unity Yoga’.
+The site was created using the Visual Studio code editor and pushed to github to the remote repository ‘Malagatrivia’.
 The following git commands were used throughout development to push code to the remote repo:
 git add <file> - This command was used to add the file(s) to the staging area before they are committed.
 git commit -m “commit message” - This command was used to commit changes to the local repository queue ready for the final step.
@@ -303,19 +298,15 @@ From the menu on left select 'Pages'
 From the source section drop-down menu, select the Branch: main
 Click 'Save'
 A live link will be displayed in a green banner when published successfully.
-The live link can be found [here](https://igordinuzzi.github.io/unityoga/)
+The live link can be found [here](https://igordinuzzi.github.io/malagatrivia/index.html)
 
 
 ## Credits
 
 - Written content by ChatGPT
-- Javascript accordion found [here](https://www.w3schools.com/howto/howto_js_accordion.asp)
-- Burger menu found [here](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp)
-- Icons [here](https://materializecss.com/icons.html)
 - Iconography [here](https://fontawesome.com/v4/icons/)
 
 **Media:**
 
 - Images by Unsplash
-- Illustration by Freepik
-- Logo by Igor Dinuzzi
+
