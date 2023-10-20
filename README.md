@@ -46,17 +46,17 @@ The favicon is important in a webpage as it provides a recognizable visual ident
  - 404 page - Custom 404 page and the auto-redirect feature to the homepage. The custom 404 page and auto-redirect feature have been seamlessly integrated. This ensures that when a user encounters a 404 error, they will experience a smooth transition to the custom 404 page and subsequently be redirected to the homepage. 
   ![404](doc/404.jpg)
 
-WIP ---------------------->
+
 ## Existing Features and Features to Implement
 
 **Existing features:**
+- JavaScript functionality for displaying a welcome screen before the game starts.
+- JavaScript functionality for generating random questions.
+- JavaScript functionality for a countdown timer.
+- JavaScript functionality for tracking scores.
+- JavaScript functionality to restart the game.
+- Iorad's external functionality for the assistance page.
 
-- JS Accordion for the methodology page: a JavaScript Accordion implemented on the Methodology page to create an interactive and user-friendly interface that allows users to easily expand and collapse content sections for a more organized and engaging experience. 
-
-**Features to Implement:**
-
-- Fix the newsletter submission form (PHP required: rectify the newsletter submission form by implementing PHP to ensure proper functionality and data processing.
-  ![Newsletter](doc/newsletter.jpg)
 
 ## Wireframes
 ![Wireframes](doc/wireframes.jpg)
@@ -64,16 +64,18 @@ WIP ---------------------->
 
 ## Technologies
 
-The Unity Yoga Collective website utilizes the following technologies:
+The Malaga Trivia website utilizes the following technologies:
 
 - Figma for design.
-- Material Icons and FontAwesome for icons.
+- FontAwesome for icons.
 - CSS for styling.
 - HTML for content.
-- JavaScript for responsive menu and accordion.
+- JavaScript for quiz features.
 - Visual Studio Code for development.
 - GitHub for version control.
 - ChatGPT for content creation.
+
+WIP ---------------------->
 
 ## Testing
 
