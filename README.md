@@ -9,40 +9,39 @@ Live webpage [here](https://igordinuzzi.github.io/malagatrivia/)
 - Navigation with links to Play and Help, responsive on all devices.
 Navigation in a webpage is crucial for providing a user-friendly experience by enabling visitors to efficiently explore and access the site's content, ultimately improving user engagement and satisfaction. 
 It helps users find information, products, or services, leading to increased usability and retention.
- ![Navigation](doc/nav-desktop.jpg)
-![Navigation mobile](doc/nav-mobile.jpg)
+ ![Navigation](doc/header.jpg)
   
 - Footer with a Github link.
 The footer contains important copyright information, asserting the originality and ownership of the content. Additionally, for those interested in delving deeper or collaborating, a direct link to our GitHub repository provides seamless access to the codebase.
-   ![Footer](doc/nav-desktop.jpg)
+   ![Footer](doc/footer.jpg)
 
 - Favicon for easy recognition.
 The favicon is important in a webpage as it provides a recognizable visual identity in browser tabs, enhancing brand visibility and user recognition, and it helps users quickly locate and return to the site.
-  ![Favicon](doc/favicon.png)
+  ![Favicon](doc/favicon.jpg)
   
 - A welcoming landing page featuring a quiz about Málaga, which includes an introductory screen and a compulsory field for entering one's name.
-    ![Landing Page](doc/homepage.png)
+    ![Welcome Page](doc/welcome.jpg)
   
 - Quiz interface showcasing 30 different questions, of which only 10 are displayed during each gameplay session. Each question provides three answer options, but only one of them is correct.
-  ![Freeyoga](doc/free-yoga.jpg)
+  ![Quiz](doc/question.jpg)
   
 - The user is given a ten-second window to respond to a question, as indicated by the timer functionality.
-  ![Teacher](doc/teachers.jpg)
+  ![Timer](doc/timer.jpg)
   
 - The interface will provide feedback to the user if their answer is correct.
-  ![Methodology](doc/methodology.jpg)
+  ![Right](doc/right.jpg)
   
 - The user will receive feedback from the system if their answer is incorrect and will be shown the correct response.
-  ![Schedule](doc/schedule.jpg)
+  ![Wrong](doc/wrong.jpg)
   
 - The user will receive a score based on their responses to 10 questions and will be informed about the number of remaining questions.
- ![Pricing](doc/pricing.jpg)
+  ![Score](doc/score.jpg)
  
 - Users have the option to replay and will be guided back to the introductory screen.
-  ![Contact](doc/contact.jpg)
+  ![Again](doc/play-again.jpg)
 
  - Help Page - This support page features a tutorial embedded via a third-party "Iorad" iframe. It guides users on how to navigate the game and explains the type of feedback they can expect to receive.
-  ![Thankyou](doc/thank-you.jpg)
+  ![Help](doc/help.jpg)
 
  - 404 page - Custom 404 page and the auto-redirect feature to the homepage. The custom 404 page and auto-redirect feature have been seamlessly integrated. This ensures that when a user encounters a 404 error, they will experience a smooth transition to the custom 404 page and subsequently be redirected to the homepage. 
   ![404](doc/404.jpg)
