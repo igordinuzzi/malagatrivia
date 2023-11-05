@@ -44,6 +44,7 @@ The favicon is important in a webpage as it provides a recognizable visual ident
   ![Again](doc/play-again.jpg)
 
  - Help Page - This support page features a tutorial embedded via a third-party "Iorad" iframe. It guides users on how to navigate the game and explains the type of feedback they can expect to receive.
+   In this instructional guide, I employed the complimentary edition of Iorad, and consequently, the final frame showcases promotional content from Iorad, featuring links for user registration and access to additional  tutorials created within the Iorad platform. While this may potentially present a degree of ambiguity for end-users, it was retained in its original form due to the educational nature of this project, which is affiliated with a school context.
   ![Help](doc/help.jpg)
 
  - 404 page - Custom 404 page and the auto-redirect feature to the homepage. The custom 404 page and auto-redirect feature have been seamlessly integrated. This ensures that when a user encounters a 404 error, they will experience a smooth transition to the custom 404 page and subsequently be redirected to the homepage. 
@@ -62,7 +63,8 @@ The favicon is important in a webpage as it provides a recognizable visual ident
 
 
 ## Wireframes
-![Wireframes](doc/wireframes.jpg)
+![Wire 1](doc/wire-1.jpg)
+![Wire 2](doc/wire-2.jpg)
 
 
 ## Technologies
@@ -92,7 +94,7 @@ All pages were tested to ensure responsiveness on screen sizes from 320px and up
 
 Steps to test:
 
-- Open browser and navigate to Unity Yoga Collective
+- Open browser and navigate to Malaga Trivia
 - Open the developer tools (right click and inspect)
 - Set to responsive and decrease width to 320px
 - Set the zoom to 50%
@@ -121,6 +123,12 @@ Website was also opened on the following devices and no responsive issues were s
 [Wave Accessibility](https://wave.webaim.org/) tool was used throughout the development and for final testing of the deployed website to check for any aid accessibility testing.
 
 Testing was focused to ensure the following criteria were met:
+
+| Page            | Page to Load          | Errors                | Contrast Errors       | Alerts                             | Features             | Structural elements   | Aria                  |
+| --------------- | ----------------------| ----------------------| ----------------------| ----------------------------------| ----------------------| ----------------------| ----------------------|
+| Home            | index.html            | 0                     | 0                     | 1(redundant link to the homepage) | 2                     | 5                     | 7                     |
+| Help            | help.html             | 0                     | 0                     | 1(redundant link to the homepage) | 1                     | 4                     | 5                     |
+| 404             | 404.html              | 0                     | 0                     | 1(redundant link to the homepage) | 1                     | 4                     | 5                     |
 
 - All forms have associated labels or aria-labels so that this is read out on a screen reader to users who tab to form inputs
 - Color contrasts meet a minimum ratio as specified in WCAG 2.1 Contrast Guidelines
@@ -273,11 +281,11 @@ Opened a new tab when clicked as expected.
 The usability testing for the Malaga Trivia Quiz is aimed at evaluating the user-friendliness and overall experience of the quiz. This testing involves five users who will interact with the quiz, providing feedback on the user interface, ease of navigation, and the overall quiz experience.
 
 **Participants:**
-1. Maria Lopez
-2. Carlos Rodriguez
-3. Ana Martinez
-4. Javier Gomez
-5. Laura Fernandez
+1. Maria L.
+2. Carlos R.
+3. Ana M.
+4. Javier G.
+5. Laura F.
 
 **Tasks and Feedback:**
 
@@ -353,7 +361,10 @@ The usability testing of the Malaga Trivia Quiz with five users was a big succes
   ![Help validator](doc/02-check-help.jpg)
 
 - 404 Page
-  ![404 validator](doc/03-check-error.jpg)    
+  ![404 validator](doc/03-check-error.jpg)
+
+ **JS Validator results:** 
+  ![JS validator](doc/js.jpg)   
 
 ## Deployment:
 
