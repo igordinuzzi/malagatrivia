@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
+
+:root {
+    --main-font: 'Nunito', sans-serif;
+    --primary-color: #0d2479;
+    --secondary-color: #fff;
+    --accent-color: #f2db83;
+    --button-hover-color: #efbe01;
+    --text-color: #fff;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Styles for index page */
+.index-page {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Initially hide the PLAY link when the user is not playing */
+.header.playing a[aria-label="play"] {
+    display: none;
+}
+
+/* Styles for help and 404 page */
+.help-page {
+    background-color: var(--primary-color);
+}
+
+/* header */
+header {
+    display: flex;
+    flex-grow: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    height: 50px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: var(--primary-color);
+    font-size: 14px;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    border-top: 1px solid var(--accent-color);
+    flex-grow: 0;
+}
+
+header, footer, #quizWrapper {
+    flex-shrink: 0;
+}
+
+/* fonts */
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-container i {
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+h2 {
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+#quizWrapper h2 {
+    font-size: 18px;
+}
+
+/* welcome screen section */
+#welcomeScreen {
+    width: 60%;
+    background-color: var(--secondary-color);
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 3px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    #welcomeScreen {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+/* quiz screen section */
+#quizWrapper {
+    width: 90%;
+    max-width: 600px;
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 3px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    #quizWrapper {
+        width: 90%;
+    }
+}
+
+/* help section */
+#help {
+    width: 60%;
+    background-color: var(--secondary-color);
+    padding: 30px;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* error section */
+#error {
+    width: 60%;
+    padding: 30px;
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+    #quizWrapper {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+/* input */
+input {
+    font-size: 16px;
+    background-color: #D9ECF4;
+    margin: 5px;
+    border-radius: 20px;
+    color: var(--primary-color);
+    padding: 10px 10px;
+    text-align: left;
+    max-width: 100%;
+}
+
+/* Links */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--button-hover-color);
+    text-decoration: none;
+}
+
+/* Button */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: var(--main-font);
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+#quizWrapper > * {
+    display: block;
+    width: 100%;
+}
+
+.answer-button {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Feedback */
+#feedback {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+#feedback img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+.correct-feedback {
+    color: #b9ff83;
+}
+
+.incorrect-feedback {
+    color: #ff8383;
+}
+
+/* Timer, question count, and score */
+.time-remaining,
+.question-count,
+.scoreboard {
+    font-size: 16px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    max-width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
+.scoreboard h2 {
+    font-size: 16px;
+    background-color: #D9ECF4;
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: var(--primary-color);
+}
+
+.timer {
+    font-size: 16px;
+    color: #a6bdff;
+    margin: 10px;
+    border: 2px solid #a6bdff;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/* Media Query for Desktop View */
+@media (min-width: 769px) {
+    .question-count,
+    .time-remaining,
+    .scoreboard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+    .time-remaining {
+        display: block;
+    }
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .time-remaining,
+    .question-count,
+    .scoreboard {
+        display: block;
+        text-align: center;
+    }
+}
+
+p small {
+    font-size: 14px;
+}
+
+iframe.no-border {
+    border: none;
+}
