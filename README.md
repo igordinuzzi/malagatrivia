@@ -36,7 +36,10 @@ The favicon is important in a webpage as it provides a recognizable visual ident
   
 - The user will receive a score based on their responses to 10 questions and will be informed about the number of remaining questions.
   ![Score](doc/score.jpg)
- 
+
+- The user will be able to know how many questions are left.
+  ![Left](doc/question-left.jpg)
+  
 - Users have the option to replay and will be guided back to the introductory screen.
   ![Again](doc/play-again.jpg)
 
@@ -74,8 +77,6 @@ The Malaga Trivia website utilizes the following technologies:
 - Visual Studio Code for development.
 - GitHub for version control.
 - ChatGPT for content creation.
-
-WIP ---------------------->
 
 ## Testing
 
@@ -150,8 +151,22 @@ Testing was performed to ensure all navigation links on the respective pages, na
 | --------------- | ----------------------|
 | Home            | index.html            |
 | Help            | help.html             |
+| 404             | 404.html              |
 
 Links on all pages navigated to the correct pages as exptected.
+
+| Test Case                 | Description                                                       | Expected Result                                                                  |
+|---------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| 1. Homepage               | Verify that the homepage loads successfully.                      | Page loads without errors.                                                       |
+| 2. Navigation             | Test the navigation menu to ensure all links are functional.      | All links navigate to the correct pages.                                         |
+| 3. Field                  | Check if field get back with error messages                       | Errors are visible.                                                              |
+| 4. Images                 | Confirm that images load properly and are not broken.             | All images are displayed without errors.                                         |
+| 5. Feedback system        | Test the system return right/wrong answers.                       | System get backs with right and wrong answers.                                   | 
+| 6. Mobile Responsiveness  | Test the webpage on different screen sizes.                       | Content adjusts and remains readable on various screen sizes.                    |
+| 7. Browser Compatibility  | Verify that the webpage works on multiple browsers.               | Webpage functions correctly on popular browsers (Chrome, Firefox, Safari, etc.). |
+| 8. Timer                  | Check if timer is functional.                                     | Timer counts down from 10 to 0 and shows a "Time's up" message                   |
+| 9. Loading Speed          | Measure the loading speed of the webpage.                         | Page loads within an acceptable time frame.                                      |
+| 10. Error Handling        | Test for proper error messages when encountering issues.          | Appropriate error messages are displayed when errors occur.                      |
 
 _Scenario One - Correct Inputs_
 
@@ -251,6 +266,66 @@ The website performed as anticipated, and the scoring mechanism is functional.
 Testing was performed on the Github link in the footer to ensure that each one opened in a new tab.
 
 Opened a new tab when clicked as expected.
+
+**Usability Testing**
+
+*Scope:*
+The usability testing for the Malaga Trivia Quiz is aimed at evaluating the user-friendliness and overall experience of the quiz. This testing involves five users who will interact with the quiz, providing feedback on the user interface, ease of navigation, and the overall quiz experience.
+
+**Participants:**
+1. Maria Lopez
+2. Carlos Rodriguez
+3. Ana Martinez
+4. Javier Gomez
+5. Laura Fernandez
+
+**Tasks and Feedback:**
+
+*Task 1 - Quiz Introduction:*
+- Participants will be instructed to access the quiz.
+- They should review the quiz's introduction and description.
+- Provide feedback on the clarity and appeal of the introduction.
+
+*Feedback Summary:*
+- All participants found the quiz introduction clear and engaging.
+
+*Task 2 - Starting the Quiz:*
+- Participants will click on the "Start Quiz" button.
+- They should provide feedback on the loading time and the transition to the quiz questions.
+
+*Feedback Summary:*
+- All participants mentioned that the transition to the quiz was smooth, and the loading time was acceptable.
+
+*Task 3 - Navigating the Quiz:*
+- Participants will proceed to answer the quiz questions.
+- They will answer some questions correctly and some incorrectly.
+- Participants should comment on the layout, ease of selecting answers, and the overall flow of the quiz.
+
+*Feedback Summary:*
+- All participants found it easy to navigate the quiz, and they praised the user-friendly design.
+- They appreciated the immediate feedback after answering each question.
+
+*Task 4 - Correct Answer Feedback:*
+- Participants should answer a question correctly.
+- After getting a correct answer, they should provide feedback on the feedback message and the points awarded.
+
+*Feedback Summary:*
+- All participants felt motivated and engaged by the positive feedback for correct answers.
+
+*Task 5 - Incorrect Answer Feedback:*
+- Participants should answer a question incorrectly.
+- After getting a wrong answer, they should provide feedback on the feedback message and any hints provided.
+
+*Feedback Summary:*
+- All participants found the feedback for wrong answers helpful and informative, helping them learn from their mistakes.
+
+**Overall Feedback:**
+- All participants mentioned that the quiz was engaging and enjoyable.
+- They praised the design and user interface for being intuitive and visually appealing.
+- Participants found the feedback for correct and incorrect answers beneficial for their learning experience.
+
+**Conclusion:**
+The usability testing of the Malaga Trivia Quiz with five users was a big success. All participants found the quiz easy to navigate, engaging, and appreciated the immediate feedback. The design and user interface received positive feedback, and the quiz's overall usability was rated highly. The feedback provided valuable insights into the user experience and confirmed the quiz's user-friendliness.
 
 **Lighthouse Report:**
 
