@@ -15,14 +15,20 @@
 }
 
 body {
-    font-family: var(--main-font);
-    margin: 0;
-    padding: 0;
-    text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Added to distribute space */
     min-height: 100vh;
+    font-family: var(--main-font);
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
+
+.content-container {
+    flex-grow: 1; /* Grow to fill available space */
+}
+
 
 /* Styles for index page */
 .index-page {
@@ -61,8 +67,7 @@ footer {
     background-color: var(--primary-color);
     font-size: 14px;
     padding: 10px 0;
-    position: absolute;
-    bottom: 0;
+    position: static; /* Changed to static */
     text-align: center;
     border-top: 1px solid var(--accent-color);
     flex-grow: 0;
@@ -253,34 +258,42 @@ button:hover {
     color: #ff8383;
 }
 
-/* Timer, question count, and score */
+/* Timer, question count, and scoreboard */
 .time-remaining,
 .question-count,
 .scoreboard {
-    font-size: 16px;
-    padding: 5px 15px;
+    font-size: 1.2rem; /* Increased font size */
+    padding: 0.5rem 1rem;
     border-radius: 20px;
     max-width: 100%;
-    margin: 10px;
+    margin: 10px auto; /* Auto margins for horizontal centering */
     text-align: center;
+    transition: all 0.3s ease; /* Smooth transition */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack vertically */
 }
 
 .scoreboard h2 {
-    font-size: 16px;
+    font-size: 1.2rem;
     background-color: #D9ECF4;
     margin: 5px;
-    padding: 5px 15px;
+    padding: 0.5rem 1rem;
     border-radius: 20px;
     color: var(--primary-color);
 }
 
 .timer {
-    font-size: 16px;
+    font-size: 1.2rem;
     color: #a6bdff;
     margin: 10px;
     border: 2px solid #a6bdff;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
     border-radius: 20px;
+    max-width: 80%; /* Limit the width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 /* Media Query for Desktop View */
@@ -294,7 +307,7 @@ button:hover {
         flex: 1;
     }
     .time-remaining {
-        display: block;
+        display: flex;
     }
 }
 
@@ -303,8 +316,13 @@ button:hover {
     .time-remaining,
     .question-count,
     .scoreboard {
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        font-size: 1.5rem; /* Larger font size for mobile */
+    }
+    .timer {
+        max-width: 95%; /* Increase width for mobile */
     }
 }
 
