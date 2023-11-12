@@ -257,7 +257,7 @@ function displayQuestion() {
 
         timer = setInterval(() => {
             const timerElement = document.getElementById("timer");
-            timerElement.textContent = `Time Remaining: ${timeRemaining} seconds`;
+            timerElement.textContent = `Time: ${timeRemaining} seconds`;
             timeRemaining--;
 
             if (timeRemaining < 0) {
