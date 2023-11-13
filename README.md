@@ -366,6 +366,9 @@ The usability testing of the Malaga Trivia Quiz with five users was a big succes
  **JS Validator results:** 
   ![JS validator](doc/js.jpg)   
 
+ **JS Hint results:** 
+  ![JS hint](doc/jshint.jpg)    
+
 ## Deployment:
 
 **Version Control:**
