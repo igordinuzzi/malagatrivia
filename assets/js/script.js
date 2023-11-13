@@ -1,3 +1,11 @@
+// Variables to track quiz state
+let currentQuestionIndex = 0;
+let score = 0;
+let displayedQuestions = [];
+let timer;
+let timeRemaining = 10;
+let answerClicked = false; // Track if an answer has been clicked
+
 // Function to start the quiz
 function startQuiz() {
     // Check if the name field is empty
@@ -214,13 +222,6 @@ const allQuestions = [
     },
 ];
 
-// Variables to track quiz state
-let currentQuestionIndex = 0;
-let score = 0;
-let displayedQuestions = [];
-let timer;
-let timeRemaining = 10;
-let answerClicked = false; // Track if an answer has been clicked
 
 // Function to get random questions
 function getRandomQuestions() {
