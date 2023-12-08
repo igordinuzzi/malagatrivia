@@ -119,6 +119,7 @@ The favicon is important in a webpage as it provides a recognizable visual ident
 ## Wireframes
 ![Wire 1](doc/wire-1.jpg)
 ![Wire 2](doc/wire-2.jpg)
+![Palette](doc/palette.jpg)
 
 
 ## Technologies
