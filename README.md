@@ -121,6 +121,11 @@ The favicon is important in a webpage as it provides a recognizable visual ident
 ![Wire 2](doc/wire-2.jpg)
 ![Palette](doc/palette.jpg)
 
+## Code snippets
+![Wire 1](doc/code/01.jpg)
+![Wire 2](doc/code/02.jpg)
+![Palette](doc/code/03.jpg)
+
 
 ## Technologies
 
