@@ -61,6 +61,60 @@ The favicon is important in a webpage as it provides a recognizable visual ident
 - JavaScript functionality to restart the game.
 - Iorad's external functionality for the assistance page.
 
+### User Stories
+
+1. **As a quiz enthusiast,** I want to test my knowledge about Málaga through a trivia game, so I can learn interesting facts while having fun.
+
+2. **As a potential tourist,** I want to explore cultural and historical aspects of Málaga through an interactive quiz, to prepare for my visit.
+
+3. **As a teacher,** I need an engaging tool to educate my students about Spanish cities, using Málaga Trivia to make learning enjoyable.
+
+4. **As a local resident,** I want to participate in the trivia to see how well I know my city and share it with friends for a friendly competition.
+
+### User Flow
+
+1. **Landing on the Homepage**
+   - Sees the header with the game title, 'Málaga Trivia'.
+   - Offered options to either start playing ('PLAY') or seek help ('HELP').
+
+2. **Starting the Quiz**
+   - Clicks on 'PLAY' which leads to the welcome screen.
+   - Reads the introductory text about Málaga Trivia.
+   - Enters their name in the provided field.
+   - Clicks 'Start Quiz' to begin.
+
+3. **Playing the Quiz**
+   - Presented with a series of questions about Málaga, each with multiple-choice answers.
+   - Chooses an answer within the 10-second timeframe.
+   - Receives immediate feedback on their choice.
+
+4. **Completing the Quiz**
+   - Upon answering all questions, views the final score.
+   - Given the option to play again or exit.
+
+5. **Seeking Help**
+   - If needed, clicks on 'HELP' to understand how to play the game or for troubleshooting.
+
+### Task Flow for Playing a Quiz
+
+1. **Initiating the Quiz**
+   - User clicks 'PLAY' and is prompted to enter their name.
+   - After entering their name, the user clicks 'Start Quiz'.
+
+2. **Answering Questions**
+   - Presented with a question and multiple-choice answers.
+   - Selects an answer before the timer runs out.
+   - Views immediate feedback and progresses to the next question.
+
+3. **Completing the Quiz**
+   - After the last question, the quiz shows the final score.
+   - The user can choose to play again, refreshing the questions and resetting the score.
+
+### Additional Notes
+
+- The quiz offers an engaging way to learn about Málaga, appealing to various users, from locals to potential tourists.
+- The time-limited answers add excitement and challenge to the game.
+- The quiz's design is straightforward and user-friendly, ensuring accessibility for all age groups.
 
 ## Wireframes
 ![Wire 1](doc/wire-1.jpg)
