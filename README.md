@@ -135,6 +135,18 @@ The favicon is important in a webpage as it provides a recognizable visual ident
 - The quiz's design is straightforward and user-friendly, ensuring accessibility for all age groups.
 
 ## Wireframes
+```css
+   :root {
+    --main-font: 'Nunito', sans-serif;
+    --primary-color: #0d2479;
+    --secondary-color: #fff;
+    --accent-color: #f2db83;
+    --button-hover-color: #efbe01;
+    --text-color: #fff;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+```
+
 ![Wire 1](doc/wire-1.jpg)
 ![Wire 2](doc/wire-2.jpg)
 ![Palette](doc/palette.jpg)
