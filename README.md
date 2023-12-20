@@ -1,5 +1,23 @@
 # Málaga Trivia
 
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Existing Features and Features to Implement](#existing-features-and-features-to-implement)
+4. [User Stories](#user-stories)
+5. [User Flow](#user-flow)
+6. [Task Flow for Playing a Quiz](#task-flow-for-playing-a-quiz)
+7. [Additional Notes](#additional-notes)
+8. [Wireframes](#wireframes)
+9. [Code Snippets](#code-snippets)
+10. [Technologies Used](#technologies)
+11. [Learning Outcomes](#learning-outcomes)
+12. [Testing](#testing)
+13. [Deployment](#deployment)
+14. [Credits](#credits)
+15. [Media](#media)
+
+
 Introducing "Málaga Trivia" - a captivating quiz that takes you on a virtual journey through the sun-kissed streets and azure coasts of Málaga and Costa del Sol. Whether you're a native, a passionate traveler, or simply curious, this quiz offers a blend of cultural, historical, and fun-filled questions tailored to test and expand your knowledge about this Mediterranean paradise. From renowned landmarks to local delicacies and celebrated personalities, Málaga Trivia encapsulates the essence of Andalusia's crown jewel. Ready to challenge yourself? Dive in and discover the wonders of Málaga and the Costa del Sol!
 
 Live webpage [here](https://igordinuzzi.github.io/malagatrivia/)
@@ -139,6 +157,20 @@ The Malaga Trivia website utilizes the following technologies:
 - Visual Studio Code for development.
 - GitHub for version control.
 - ChatGPT for content creation.
+
+## Learning Outcomes
+
+From a student's perspective, the development of the "Málaga Trivia" project offered a multitude of educational benefits and skill enhancements in various aspects of web development and design:
+-JavaScript Application: Gained practical experience in JavaScript, particularly in creating interactive elements such as a countdown timer, random question generation, and a scoring system. This project served as a hands-on opportunity to apply JavaScript knowledge in a real-world scenario.
+- Responsive Web Design: Learned to apply responsive design principles using CSS, ensuring the website is accessible and provides an optimal viewing experience across a range of devices, from mobile phones to desktop computers.
+- User Experience (UX) Design: Developed a deeper understanding of UX principles by designing a quiz interface that is intuitive, engaging, and easy to navigate. This included creating immediate feedback mechanisms for quiz responses and ensuring the website is user-friendly.
+- Problem-Solving Skills: Enhanced problem-solving abilities by tackling various challenges that arose during development, such as implementing a timer functionality and ensuring consistent behavior across different web browsers.
+- Time Management and Project Planning: Improved time management and project planning skills, learning to allocate time effectively to different aspects of the project and to plan the development process from conception to deployment.
+- Version Control and Deployment: Became more proficient in using version control systems like Git and GitHub, which are essential for collaborative development. Also learned the process of deploying a web application to GitHub Pages.
+- Cross-Browser Compatibility: Gained insight into the importance of ensuring that web applications perform consistently across various web browsers, leading to a better understanding of web standards and compatibility issues.
+- Content Creation and SEO: Learned about content creation with a focus on engaging users and search engine optimization (SEO) best practices to make the website more discoverable.
+- Cultural Insight and Educational Value: Through the process of creating a quiz about Málaga, gained valuable insights into the cultural, historical, and geographic aspects of the region, enhancing personal knowledge and appreciation for the subject matter.
+- Feedback Implementation: Learned to implement user feedback effectively, which is vital for the iterative process of improving a web application's design and functionality.
 
 ## Testing
 
@@ -454,8 +486,5 @@ The live link can be found [here](https://igordinuzzi.github.io/malagatrivia/ind
 
 - Written content by ChatGPT
 - Iconography [here](https://fontawesome.com/v4/icons/)
-
-**Media:**
-
 - Images by Unsplash
 
