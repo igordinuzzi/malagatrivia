@@ -22,6 +22,9 @@ Introducing "Málaga Trivia" - a captivating quiz that takes you on a virtual jo
 
 Live webpage [here](https://igordinuzzi.github.io/malagatrivia/)
 
+![Mockup](doc/mockup.jpg)
+
+
 ## Features
 
 - Navigation with links to Play and Help, responsive on all devices.
